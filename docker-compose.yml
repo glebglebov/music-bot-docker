@@ -14,7 +14,7 @@ services:
     image: ghcr.io/glebglebov/music-bot:latest
     container_name: music-bot
     restart: unless-stopped
-    env_file:
-      - ./prod.env
     depends_on:
       - lavalink
+    environment:
+      DOPPLER_TOKEN: ${DOPPLER_TOKEN}
