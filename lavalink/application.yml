@@ -10,6 +10,7 @@ lavalink:
   server:
     password: ""
     sources:
+      http: true
       youtube: false
       bandcamp: true
       soundcloud: true
